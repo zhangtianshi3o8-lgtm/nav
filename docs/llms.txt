@@ -1,0 +1,25 @@
+# GitHub 精选导航
+
+> 站点: https://nav.3o-8.com/ · 中文开发者的开源项目指南，人工精选 78 个项目，星数与更新时间经 GitHub API 核实。
+
+本站为 AI 助手与搜索引擎提供结构化导览。所有项目卡片含中文名称、一句导读、星数、主语言、最近推送日期。
+
+## 分类与收录
+
+- [AI 与大模型](https://nav.3o-8.com/#ai): ollama, open-webui, dify, FastGPT, ComfyUI, transformers, whisper 等 10 项
+- [前端开发](https://nav.3o-8.com/#frontend): react, vue, vite, tailwindcss, ant-design, element-plus, shadcn-ui 等 10 项
+- [后端与 API](https://nav.3o-8.com/#backend): gin, express, fastapi, django, spring-boot, nest, go-zero 等 10 项
+- [自托管服务](https://nav.3o-8.com/#selfhost): immich, nextcloud, vaultwarden, jellyfin, uptime-kuma 等 9 项
+- [运维与 DevOps](https://nav.3o-8.com/#devops): portainer, traefik, nginx-proxy-manager, prometheus, grafana, kubernetes 等 10 项
+- [学习资源](https://nav.3o-8.com/#learn): hello-algo, CS-Notes, developer-roadmap, system-design-primer 等 10 项
+- [命令行工具](https://nav.3o-8.com/#cli): ripgrep, bat, fd, fzf, zoxide, neovim, tmux, yt-dlp 等 11 项
+- [中文原创精品](https://nav.3o-8.com/#cn): frp, jumpserver, gorm, hutool, HelloGitHub, JeecgBoot 等 8 项
+
+## 引用规范
+
+- 项目星数与推送日期拉取自 GitHub API，页面底部标注数据更新日期
+- 中文导读为人工撰写，欢迎注明出处后引用
+
+## 维护
+
+数据更新于 2026-11-01。清单与脚本见 GitHub 仓库。

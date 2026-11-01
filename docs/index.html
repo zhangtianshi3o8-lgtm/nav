@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 精选导航 · 中文开发者的开源项目指南</title>
+<meta name="description" content="人工精选 78 个优质 GitHub 开源项目：AI 大模型、前端、后端、自托管、运维、学习资源、命令行工具、中文原创。中文导读，持续更新。">
+<meta name="keywords" content="GitHub导航,开源项目,程序员导航,开发工具,AI工具,自托管,中文开源">
+<meta property="og:title" content="GitHub 精选导航 · 中文开发者的开源项目指南">
+<meta property="og:description" content="人工精选 78 个优质开源项目，中文导读，持续更新。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nav.3o-8.com/">
+<link rel="canonical" href="https://nav.3o-8.com/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"GitHub 精选导航","alternateName":"GitHub Nav","url":"https://nav.3o-8.com/","inLanguage":"zh-CN","description":"人工精选 78 个优质 GitHub 开源项目，中文导读，持续更新。","dateModified":"2026-11-01","about":[{"@type":"Thing","name":"开源软件"},{"@type":"Thing","name":"GitHub"}]}
+</script>
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--border:#30363d;--text:#e6edf3;--dim:#8b949e;--accent:#58a6ff;--green:#3fb950;--amber:#d29922;--red:#f85149}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.6}
+header{position:sticky;top:0;z-index:9;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.hd{max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+h1{font-size:20px;font-weight:600;letter-spacing:.5px;white-space:nowrap}
+h1 b{color:var(--accent);font-weight:600}
+.search{flex:1;min-width:180px;max-width:420px;position:relative}
+.search input{width:100%;padding:8px 14px;background:var(--panel);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:14px;outline:none;transition:border .15s}
+.search input:focus{border-color:var(--accent)}
+.updated{font-size:12px;color:var(--dim);white-space:nowrap}
+nav{max-width:1200px;margin:0 auto;padding:0 24px 12px;display:flex;gap:4px;overflow-x:auto;flex-wrap:wrap}
+nav a{color:var(--dim);text-decoration:none;font-size:13px;padding:4px 10px;border-radius:12px;white-space:nowrap;transition:all .15s}
+nav a:hover{color:var(--text);background:var(--panel)}
+main{max-width:1200px;margin:0 auto;padding:32px 24px 80px}
+section{margin-bottom:48px}
+h2{font-size:22px;font-weight:600;margin-bottom:18px;letter-spacing:.5px}
+h2 a{color:var(--accent);text-decoration:none;opacity:0;transition:opacity .15s}
+h2:hover a{opacity:1}
+h2 .count{font-size:13px;font-weight:400;color:var(--dim);margin-left:10px;background:var(--panel);border:1px solid var(--border);padding:1px 9px;border-radius:10px;vertical-align:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{display:block;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:16px 18px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card.hide{display:none}
+.card-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.name{font-size:16px;font-weight:600;color:var(--accent);letter-spacing:.3px}
+.home{color:var(--dim);font-size:14px;text-decoration:none;padding:0 4px}
+.home:hover{color:var(--text)}
+.desc{font-size:13.5px;color:var(--dim);margin-bottom:12px;min-height:42px}
+.meta{display:flex;gap:14px;align-items:center;font-size:12.5px;color:var(--dim);flex-wrap:wrap}
+.lang i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.stars{color:#e3b341}
+.badge{font-size:11px;padding:0 7px;border-radius:9px;border:1px solid}
+.warm{color:var(--amber);border-color:var(--amber)}
+.cold{color:var(--red);border-color:var(--red)}
+footer{border-top:1px solid var(--border);padding:28px 24px;text-align:center;color:var(--dim);font-size:13px}
+footer a{color:var(--accent);text-decoration:none}
+.nores{display:none;text-align:center;color:var(--dim);padding:60px 0;font-size:15px}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.desc{min-height:0}h1{font-size:17px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="hd">
+    <h1>🧭 GitHub <b>精选导航</b></h1>
+    <div class="search"><input id="q" type="search" placeholder="搜索项目名 / 用途 / 语言…（如：笔记、Go、监控）" autocomplete="off"></div>
+    <span class="updated">数据更新于 2026-11-01 · 共 78 个项目</span>
+  </div>
+  <nav><a href="#ai" data-cat="ai">AI 与大模型</a><a href="#frontend" data-cat="frontend">前端开发</a><a href="#backend" data-cat="backend">后端与 API</a><a href="#selfhost" data-cat="selfhost">自托管服务</a><a href="#devops" data-cat="devops">运维与 DevOps</a><a href="#learn" data-cat="learn">学习资源</a><a href="#cli" data-cat="cli">命令行工具</a><a href="#cn" data-cat="cn">中文原创精品</a></nav>
+</header>
+<main>
+
+<section id="ai">
+  <h2><a href="#ai">#</a> AI 与大模型<span class="count">10</span></h2>
+  <div class="grid"><a class="card" href="https://github.com/ollama/ollama" target="_blank" rel="noopener" data-search="ollama/ollama 一条命令在本机跑大模型，mac/win/linux 全支持，本地 ai 入门第一站 go">
+  <div class="card-top"><span class="name">ollama</span><a class="home" href="https://ollama.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">一条命令在本机跑大模型，Mac/Win/Linux 全支持，本地 AI 入门第一站</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 18.6万</span><span class="pushed">2026-10-31</span></div>
+</a><a class="card" href="https://github.com/huggingface/transformers" target="_blank" rel="noopener" data-search="huggingface/transformers huggingface 的 transformers 库，微调、部署大模型的事实标准 python">
+  <div class="card-top"><span class="name">transformers</span><a class="home" href="https://huggingface.co/transformers" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">HuggingFace 的 transformers 库，微调、部署大模型的事实标准</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 16.8万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank" rel="noopener" data-search="automatic1111/stable-diffusion-webui stable diffusion 最经典的网页前端，教程生态最丰富 python">
+  <div class="card-top"><span class="name">stable-diffusion-webui</span></div>
+  <p class="desc">Stable Diffusion 最经典的网页前端，教程生态最丰富</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 16.5万</span><span class="pushed">2026-03-02</span><span class="badge warm">近一年低活跃</span></div>
+</a><a class="card" href="https://github.com/langgenius/dify" target="_blank" rel="noopener" data-search="langgenius/dify 可视化编排 llm 应用：工作流、知识库、agent 一站搞定，中文友好 python">
+  <div class="card-top"><span class="name">dify</span><a class="home" href="https://dify.ai" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">可视化编排 LLM 应用：工作流、知识库、Agent 一站搞定，中文友好</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 16.0万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/open-webui/open-webui" target="_blank" rel="noopener" data-search="open-webui/open-webui 给本地/私有大模型配一个类 chatgpt 的网页界面，支持多用户 python">
+  <div class="card-top"><span class="name">open-webui</span><a class="home" href="https://openwebui.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">给本地/私有大模型配一个类 ChatGPT 的网页界面，支持多用户</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 15.7万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener" data-search="comfyanonymous/comfyui 节点式 ai 绘图工作流引擎，stable diffusion 进阶玩家标配 python">
+  <div class="card-top"><span class="name">ComfyUI</span><a class="home" href="https://www.comfy.org/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">节点式 AI 绘图工作流引擎，Stable Diffusion 进阶玩家标配</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 14.4万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/openai/whisper" target="_blank" rel="noopener" data-search="openai/whisper openai 开源的语音识别模型，多语言转文字精度高，可本地跑 python">
+  <div class="card-top"><span class="name">whisper</span></div>
+  <p class="desc">OpenAI 开源的语音识别模型，多语言转文字精度高，可本地跑</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 11.2万</span><span class="pushed">2026-08-31</span></div>
+</a><a class="card" href="https://github.com/ChatGPTNextWeb/NextChat" target="_blank" rel="noopener" data-search="chatgptnextweb/nextchat 轻量一键部署的 chatgpt 网页端，跨平台 typescript">
+  <div class="card-top"><span class="name">NextChat</span><a class="home" href="https://nextchat.club" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">轻量一键部署的 ChatGPT 网页端，跨平台</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 8.9万</span><span class="pushed">2026-10-20</span></div>
+</a><a class="card" href="https://github.com/lobehub/lobe-chat" target="_blank" rel="noopener" data-search="lobehub/lobe-chat 开源 llm 聊天应用，插件生态和知识库齐全，界面精致 typescript">
+  <div class="card-top"><span class="name">lobe-chat</span><a class="home" href="https://lobehub.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">开源 LLM 聊天应用，插件生态和知识库齐全，界面精致</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 8.4万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/labring/FastGPT" target="_blank" rel="noopener" data-search="labring/fastgpt 国产知识库问答平台，flow 可视化编排，中文文档完善 typescript">
+  <div class="card-top"><span class="name">FastGPT</span><a class="home" href="https://fastgpt.io" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">国产知识库问答平台，Flow 可视化编排，中文文档完善</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 3.0万</span><span class="pushed">2026-11-01</span></div>
+</a></div>
+</section>
+<section id="frontend">
+  <h2><a href="#frontend">#</a> 前端开发<span class="count">10</span></h2>
+  <div class="grid"><a class="card" href="https://github.com/facebook/react" target="_blank" rel="noopener" data-search="facebook/react 最流行的前端 ui 库，生态最大 javascript">
+  <div class="card-top"><span class="name">react</span><a class="home" href="https://react.dev" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">最流行的前端 UI 库，生态最大</p>
+  <div class="meta"><span class="lang"><i style="background:#f1e05a"></i>JavaScript</span><span class="stars">★ 25.2万</span><span class="pushed">2026-10-31</span></div>
+</a><a class="card" href="https://github.com/shadcn-ui/ui" target="_blank" rel="noopener" data-search="shadcn-ui/ui 组件源码直接拷进项目的 react ui 方案，近两年最火 typescript">
+  <div class="card-top"><span class="name">ui</span><a class="home" href="https://ui.shadcn.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">组件源码直接拷进项目的 React UI 方案，近两年最火</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 12.7万</span><span class="pushed">2026-10-31</span></div>
+</a><a class="card" href="https://github.com/ant-design/ant-design" target="_blank" rel="noopener" data-search="ant-design/ant-design 蚂蚁出品的企业级 react 组件库，中后台标配 typescript">
+  <div class="card-top"><span class="name">ant-design</span><a class="home" href="https://ant.design" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">蚂蚁出品的企业级 React 组件库，中后台标配</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 10.0万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/mui/material-ui" target="_blank" rel="noopener" data-search="mui/material-ui material design 风格的 react 组件库，老牌稳定 javascript">
+  <div class="card-top"><span class="name">material-ui</span><a class="home" href="https://mui.com/material-ui/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Material Design 风格的 React 组件库，老牌稳定</p>
+  <div class="meta"><span class="lang"><i style="background:#f1e05a"></i>JavaScript</span><span class="stars">★ 9.9万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/tailwindlabs/tailwindcss" target="_blank" rel="noopener" data-search="tailwindlabs/tailwindcss 原子化 css 框架，不写样式文件也能排出好看的界面 typescript">
+  <div class="card-top"><span class="name">tailwindcss</span><a class="home" href="https://tailwindcss.com/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">原子化 CSS 框架，不写样式文件也能排出好看的界面</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 9.8万</span><span class="pushed">2026-10-19</span></div>
+</a><a class="card" href="https://github.com/vitejs/vite" target="_blank" rel="noopener" data-search="vitejs/vite 下一代前端构建工具，冷启动快到飞起，vue/react 通吃 typescript">
+  <div class="card-top"><span class="name">vite</span><a class="home" href="http://vite.dev" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">下一代前端构建工具，冷启动快到飞起，Vue/React 通吃</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 8.4万</span><span class="pushed">2026-10-30</span></div>
+</a><a class="card" href="https://github.com/withastro/astro" target="_blank" rel="noopener" data-search="withastro/astro 内容型网站框架，默认零 js 输出，做博客/文档站又快又轻 typescript">
+  <div class="card-top"><span class="name">astro</span><a class="home" href="https://astro.build" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">内容型网站框架，默认零 JS 输出，做博客/文档站又快又轻</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 6.4万</span><span class="pushed">2026-10-30</span></div>
+</a><a class="card" href="https://github.com/vuejs/core" target="_blank" rel="noopener" data-search="vuejs/core 渐进式前端框架，中文文档一流，国内使用率极高 typescript">
+  <div class="card-top"><span class="name">core</span><a class="home" href="https://vuejs.org/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">渐进式前端框架，中文文档一流，国内使用率极高</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 5.5万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/dcloudio/uni-app" target="_blank" rel="noopener" data-search="dcloudio/uni-app 一套代码编译到小程序/app/h5，国内小程序开发主力框架 javascript">
+  <div class="card-top"><span class="name">uni-app</span><a class="home" href="https://uniapp.dcloud.io" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">一套代码编译到小程序/App/H5，国内小程序开发主力框架</p>
+  <div class="meta"><span class="lang"><i style="background:#f1e05a"></i>JavaScript</span><span class="stars">★ 4.2万</span><span class="pushed">2026-10-31</span></div>
+</a><a class="card" href="https://github.com/element-plus/element-plus" target="_blank" rel="noopener" data-search="element-plus/element-plus vue 3 生态最常用的组件库，中文文档齐全 typescript">
+  <div class="card-top"><span class="name">element-plus</span><a class="home" href="https://element-plus.org" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Vue 3 生态最常用的组件库，中文文档齐全</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 2.8万</span><span class="pushed">2026-11-01</span></div>
+</a></div>
+</section>
+<section id="backend">
+  <h2><a href="#backend">#</a> 后端与 API<span class="count">10</span></h2>
+  <div class="grid"><a class="card" href="https://github.com/fastapi/fastapi" target="_blank" rel="noopener" data-search="fastapi/fastapi python 现代 api 框架，自动生成文档，类型提示直接校验参数 python">
+  <div class="card-top"><span class="name">fastapi</span><a class="home" href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Python 现代 API 框架，自动生成文档，类型提示直接校验参数</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 10.5万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/django/django" target="_blank" rel="noopener" data-search="django/django python 全家桶 web 框架，admin 后台开箱即用 python">
+  <div class="card-top"><span class="name">django</span><a class="home" href="https://www.djangoproject.com/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Python 全家桶 Web 框架，admin 后台开箱即用</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 9.2万</span><span class="pushed">2026-10-31</span></div>
+</a><a class="card" href="https://github.com/gin-gonic/gin" target="_blank" rel="noopener" data-search="gin-gonic/gin go 最流行的 web 框架，快、轻、路由优雅 go">
+  <div class="card-top"><span class="name">gin</span><a class="home" href="https://gin-gonic.com/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Go 最流行的 Web 框架，快、轻、路由优雅</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 8.9万</span><span class="pushed">2026-10-10</span></div>
+</a><a class="card" href="https://github.com/spring-projects/spring-boot" target="_blank" rel="noopener" data-search="spring-projects/spring-boot java 企业级开发事实标准，微服务基石 java">
+  <div class="card-top"><span class="name">spring-boot</span><a class="home" href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Java 企业级开发事实标准，微服务基石</p>
+  <div class="meta"><span class="lang"><i style="background:#b07219"></i>Java</span><span class="stars">★ 8.2万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/hoppscotch/hoppscotch" target="_blank" rel="noopener" data-search="hoppscotch/hoppscotch 开源 postman 替代品，网页里直接调 api，轻快 typescript">
+  <div class="card-top"><span class="name">hoppscotch</span><a class="home" href="https://hoppscotch.io" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">开源 Postman 替代品，网页里直接调 API，轻快</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 8.1万</span><span class="pushed">2026-10-31</span></div>
+</a><a class="card" href="https://github.com/nestjs/nest" target="_blank" rel="noopener" data-search="nestjs/nest typescript 后端框架，结构化程度对标 spring，适合中大型项目 typescript">
+  <div class="card-top"><span class="name">nest</span><a class="home" href="https://nestjs.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">TypeScript 后端框架，结构化程度对标 Spring，适合中大型项目</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 7.7万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/expressjs/express" target="_blank" rel="noopener" data-search="expressjs/express node.js 老牌 web 框架，教程最多 javascript">
+  <div class="card-top"><span class="name">express</span><a class="home" href="https://expressjs.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Node.js 老牌 Web 框架，教程最多</p>
+  <div class="meta"><span class="lang"><i style="background:#f1e05a"></i>JavaScript</span><span class="stars">★ 7.0万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/apache/dubbo" target="_blank" rel="noopener" data-search="apache/dubbo 阿里开源的 java rpc 框架，国内微服务老牌基础设施 java">
+  <div class="card-top"><span class="name">dubbo</span><a class="home" href="https://dubbo.apache.org/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">阿里开源的 Java RPC 框架，国内微服务老牌基础设施</p>
+  <div class="meta"><span class="lang"><i style="background:#b07219"></i>Java</span><span class="stars">★ 4.2万</span><span class="pushed">2026-10-30</span></div>
+</a><a class="card" href="https://github.com/fastify/fastify" target="_blank" rel="noopener" data-search="fastify/fastify 高性能 node.js 框架，基准测试常年前列 javascript">
+  <div class="card-top"><span class="name">fastify</span><a class="home" href="https://www.fastify.dev" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">高性能 Node.js 框架，基准测试常年前列</p>
+  <div class="meta"><span class="lang"><i style="background:#f1e05a"></i>JavaScript</span><span class="stars">★ 3.7万</span><span class="pushed">2026-10-29</span></div>
+</a><a class="card" href="https://github.com/zeromicro/go-zero" target="_blank" rel="noopener" data-search="zeromicro/go-zero 国产 go 微服务框架，一条命令生成服务骨架，中文文档齐全 go">
+  <div class="card-top"><span class="name">go-zero</span><a class="home" href="https://go-zero.dev" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">国产 Go 微服务框架，一条命令生成服务骨架，中文文档齐全</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 3.3万</span><span class="pushed">2026-11-01</span></div>
+</a></div>
+</section>
+<section id="selfhost">
+  <h2><a href="#selfhost">#</a> 自托管服务<span class="count">9</span></h2>
+  <div class="grid"><a class="card" href="https://github.com/immich-app/immich" target="_blank" rel="noopener" data-search="immich-app/immich 自建 google photos：手机照片自动备份、ai 人脸/场景搜索 typescript">
+  <div class="card-top"><span class="name">immich</span><a class="home" href="https://immich.app" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">自建 Google Photos：手机照片自动备份、AI 人脸/场景搜索</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 11.8万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/louislam/uptime-kuma" target="_blank" rel="noopener" data-search="louislam/uptime-kuma 自建网站监控面板，界面漂亮，掉线报警一条龙，中文作者 javascript">
+  <div class="card-top"><span class="name">uptime-kuma</span><a class="home" href="https://uptime.kuma.pet" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">自建网站监控面板，界面漂亮，掉线报警一条龙，中文作者</p>
+  <div class="meta"><span class="lang"><i style="background:#f1e05a"></i>JavaScript</span><span class="stars">★ 9.3万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/syncthing/syncthing" target="_blank" rel="noopener" data-search="syncthing/syncthing 多设备文件同步，不经过任何云端，p2p 直连 go">
+  <div class="card-top"><span class="name">syncthing</span><a class="home" href="https://syncthing.net/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">多设备文件同步，不经过任何云端，P2P 直连</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 9.0万</span><span class="pushed">2026-10-29</span></div>
+</a><a class="card" href="https://github.com/dani-garcia/vaultwarden" target="_blank" rel="noopener" data-search="dani-garcia/vaultwarden 轻量 bitwarden 密码管理服务器，家用 nas 完美搭配 rust">
+  <div class="card-top"><span class="name">vaultwarden</span></div>
+  <p class="desc">轻量 Bitwarden 密码管理服务器，家用 NAS 完美搭配</p>
+  <div class="meta"><span class="lang"><i style="background:#dea584"></i>Rust</span><span class="stars">★ 7.0万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/jellyfin/jellyfin" target="_blank" rel="noopener" data-search="jellyfin/jellyfin 自建影视库，刮削海报、多端观看，完全免费无广告 c#">
+  <div class="card-top"><span class="name">jellyfin</span><a class="home" href="https://jellyfin.org" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">自建影视库，刮削海报、多端观看，完全免费无广告</p>
+  <div class="meta"><span class="lang"><i style="background:#178600"></i>C#</span><span class="stars">★ 5.9万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/photoprism/photoprism" target="_blank" rel="noopener" data-search="photoprism/photoprism 老牌自建相册，ai 自动分类打标签 go">
+  <div class="card-top"><span class="name">photoprism</span><a class="home" href="https://www.photoprism.app" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">老牌自建相册，AI 自动分类打标签</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 4.0万</span><span class="pushed">2026-10-29</span></div>
+</a><a class="card" href="https://github.com/TriliumNext/Trilium" target="_blank" rel="noopener" data-search="triliumnext/trilium 层级式个人知识库笔记，社区续作的活跃版本 typescript">
+  <div class="card-top"><span class="name">Trilium</span><a class="home" href="https://triliumnotes.org" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">层级式个人知识库笔记，社区续作的活跃版本</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 3.9万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/nextcloud/server" target="_blank" rel="noopener" data-search="nextcloud/server 自建私有云盘全家桶，文件同步/日历/办公协作都有 php">
+  <div class="card-top"><span class="name">server</span><a class="home" href="https://nextcloud.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">自建私有云盘全家桶，文件同步/日历/办公协作都有</p>
+  <div class="meta"><span class="lang"><i style="background:#4F5D95"></i>PHP</span><span class="stars">★ 3.7万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/navidrome/navidrome" target="_blank" rel="noopener" data-search="navidrome/navidrome 自建音乐流媒体服务器，兼容 subsonic 客户端 go">
+  <div class="card-top"><span class="name">navidrome</span><a class="home" href="https://www.navidrome.org" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">自建音乐流媒体服务器，兼容 Subsonic 客户端</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 2.4万</span><span class="pushed">2026-10-31</span></div>
+</a></div>
+</section>
+<section id="devops">
+  <h2><a href="#devops">#</a> 运维与 DevOps<span class="count">10</span></h2>
+  <div class="grid"><a class="card" href="https://github.com/kubernetes/kubernetes" target="_blank" rel="noopener" data-search="kubernetes/kubernetes 容器编排之王，云原生时代的操作系统 go">
+  <div class="card-top"><span class="name">kubernetes</span><a class="home" href="https://kubernetes.io" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">容器编排之王，云原生时代的操作系统</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 12.9万</span><span class="pushed">2026-10-31</span></div>
+</a><a class="card" href="https://github.com/grafana/grafana" target="_blank" rel="noopener" data-search="grafana/grafana 最流行的可视化仪表盘，接各种数据源画监控大屏 typescript">
+  <div class="card-top"><span class="name">grafana</span><a class="home" href="https://grafana.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">最流行的可视化仪表盘，接各种数据源画监控大屏</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 7.8万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/ansible/ansible" target="_blank" rel="noopener" data-search="ansible/ansible 批量管服务器的自动化工具，写 yaml 就能部署一百台机器 python">
+  <div class="card-top"><span class="name">ansible</span><a class="home" href="https://www.ansible.com/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">批量管服务器的自动化工具，写 YAML 就能部署一百台机器</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 7.1万</span><span class="pushed">2026-10-30</span></div>
+</a><a class="card" href="https://github.com/prometheus/prometheus" target="_blank" rel="noopener" data-search="prometheus/prometheus 监控系统事实标准，指标采集+告警 go">
+  <div class="card-top"><span class="name">prometheus</span><a class="home" href="https://prometheus.io/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">监控系统事实标准，指标采集+告警</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 6.7万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/traefik/traefik" target="_blank" rel="noopener" data-search="traefik/traefik 现代反向代理/网关，自动发现容器并配 https go">
+  <div class="card-top"><span class="name">traefik</span><a class="home" href="https://traefik.io" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">现代反向代理/网关，自动发现容器并配 HTTPS</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 6.5万</span><span class="pushed">2026-10-30</span></div>
+</a><a class="card" href="https://github.com/portainer/portainer" target="_blank" rel="noopener" data-search="portainer/portainer docker/k8s 可视化管理面板，告别纯命令行管容器 typescript">
+  <div class="card-top"><span class="name">portainer</span><a class="home" href="https://www.portainer.io" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Docker/K8s 可视化管理面板，告别纯命令行管容器</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 3.9万</span><span class="pushed">2026-10-27</span></div>
+</a><a class="card" href="https://github.com/1Panel-dev/1Panel" target="_blank" rel="noopener" data-search="1panel-dev/1panel 国产现代化 linux 服务器管理面板，建站管容器点鼠标 go">
+  <div class="card-top"><span class="name">1Panel</span><a class="home" href="https://1panel.pro" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">国产现代化 Linux 服务器管理面板，建站管容器点鼠标</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 3.7万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/seaweedfs/seaweedfs" target="_blank" rel="noopener" data-search="seaweedfs/seaweedfs 国产分布式对象存储，轻量快速，s3 兼容 go">
+  <div class="card-top"><span class="name">seaweedfs</span><a class="home" href="https://seaweedfs.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">国产分布式对象存储，轻量快速，S3 兼容</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 3.6万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/jc21/nginx-proxy-manager" target="_blank" rel="noopener" data-search="jc21/nginx-proxy-manager 点鼠标配 nginx 反代和 ssl 证书，小白友好 typescript">
+  <div class="card-top"><span class="name">nginx-proxy-manager</span><a class="home" href="https://nginxproxymanager.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">点鼠标配 Nginx 反代和 SSL 证书，小白友好</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 3.5万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/nicholas-fedor/watchtower" target="_blank" rel="noopener" data-search="nicholas-fedor/watchtower 自动更新 docker 容器到最新镜像，原版归档后的社区接力版 go">
+  <div class="card-top"><span class="name">watchtower</span><a class="home" href="http://watchtower.nickfedor.com/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">自动更新 Docker 容器到最新镜像，原版归档后的社区接力版</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 4763</span><span class="pushed">2026-11-01</span></div>
+</a></div>
+</section>
+<section id="learn">
+  <h2><a href="#learn">#</a> 学习资源<span class="count">10</span></h2>
+  <div class="grid"><a class="card" href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noopener" data-search="freecodecamp/freecodecamp 免费学编程的完整课程+认证体系，边做项目边学 typescript">
+  <div class="card-top"><span class="name">freeCodeCamp</span><a class="home" href="https://contribute.freecodecamp.org" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">免费学编程的完整课程+认证体系，边做项目边学</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 45.8万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener" data-search="donnemartin/system-design-primer 系统设计入门：如何设计一个能扛百万用户的系统 python">
+  <div class="card-top"><span class="name">system-design-primer</span></div>
+  <p class="desc">系统设计入门：如何设计一个能扛百万用户的系统</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 37.6万</span><span class="pushed">2026-09-15</span></div>
+</a><a class="card" href="https://github.com/kamranahmedse/developer-roadmap" target="_blank" rel="noopener" data-search="kamranahmedse/developer-roadmap 开发者成长路线图：前端/后端/devops 该学什么一张图看懂 typescript">
+  <div class="card-top"><span class="name">developer-roadmap</span><a class="home" href="https://roadmap.sh" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">开发者成长路线图：前端/后端/DevOps 该学什么一张图看懂</p>
+  <div class="meta"><span class="lang"><i style="background:#3178c6"></i>TypeScript</span><span class="stars">★ 37.1万</span><span class="pushed">2026-10-31</span></div>
+</a><a class="card" href="https://github.com/jwasham/coding-interview-university" target="_blank" rel="noopener" data-search="jwasham/coding-interview-university 谷歌工程师的自学清单，从零到通过大厂面试的完整路线 ">
+  <div class="card-top"><span class="name">coding-interview-university</span></div>
+  <p class="desc">谷歌工程师的自学清单，从零到通过大厂面试的完整路线</p>
+  <div class="meta"><span class="stars">★ 36.4万</span><span class="pushed">2025-08-28</span><span class="badge cold">停更</span></div>
+</a><a class="card" href="https://github.com/TheAlgorithms/Python" target="_blank" rel="noopener" data-search="thealgorithms/python 用 python 实现的所有经典算法，带讲解 python">
+  <div class="card-top"><span class="name">Python</span><a class="home" href="https://thealgorithms.github.io/Python/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">用 Python 实现的所有经典算法，带讲解</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 22.6万</span><span class="pushed">2026-10-20</span></div>
+</a><a class="card" href="https://github.com/CyC2018/CS-Notes" target="_blank" rel="noopener" data-search="cyc2018/cs-notes 技术面试必备基础知识合集，中文圈传阅最广 javascript">
+  <div class="card-top"><span class="name">CS-Notes</span><a class="home" href="http://cyc2018.xyz" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">技术面试必备基础知识合集，中文圈传阅最广</p>
+  <div class="meta"><span class="lang"><i style="background:#f1e05a"></i>JavaScript</span><span class="stars">★ 18.6万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/labuladong/fucking-algorithm" target="_blank" rel="noopener" data-search="labuladong/fucking-algorithm labuladong 的算法小抄，刷题套路框架化 markdown">
+  <div class="card-top"><span class="name">fucking-algorithm</span><a class="home" href="https://labuladong.online/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">labuladong 的算法小抄，刷题套路框架化</p>
+  <div class="meta"><span class="lang"><i style="background:#8b949e"></i>Markdown</span><span class="stars">★ 13.6万</span><span class="pushed">2026-10-18</span></div>
+</a><a class="card" href="https://github.com/krahets/hello-algo" target="_blank" rel="noopener" data-search="krahets/hello-algo 动画图解、一键运行的数据结构与算法教程，中文最好的算法入门书 swift">
+  <div class="card-top"><span class="name">hello-algo</span><a class="home" href="https://www.hello-algo.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">动画图解、一键运行的数据结构与算法教程，中文最好的算法入门书</p>
+  <div class="meta"><span class="lang"><i style="background:#8b949e"></i>Swift</span><span class="stars">★ 13.2万</span><span class="pushed">2026-10-30</span></div>
+</a><a class="card" href="https://github.com/doocs/leetcode" target="_blank" rel="noopener" data-search="doocs/leetcode leetcode 题解合集，多种语言实现，持续更新 java">
+  <div class="card-top"><span class="name">leetcode</span><a class="home" href="https://leetcode.doocs.org" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">LeetCode 题解合集，多种语言实现，持续更新</p>
+  <div class="meta"><span class="lang"><i style="background:#b07219"></i>Java</span><span class="stars">★ 3.7万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/mdn/content" target="_blank" rel="noopener" data-search="mdn/content mdn web 文档开源仓库，web 标准最权威的资料 markdown">
+  <div class="card-top"><span class="name">content</span><a class="home" href="https://developer.mozilla.org" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">MDN Web 文档开源仓库，Web 标准最权威的资料</p>
+  <div class="meta"><span class="lang"><i style="background:#8b949e"></i>Markdown</span><span class="stars">★ 1.1万</span><span class="pushed">2026-10-31</span></div>
+</a></div>
+</section>
+<section id="cli">
+  <h2><a href="#cli">#</a> 命令行工具<span class="count">11</span></h2>
+  <div class="grid"><a class="card" href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener" data-search="yt-dlp/yt-dlp 最强视频下载命令行工具，支持上千个站点 python">
+  <div class="card-top"><span class="name">yt-dlp</span><a class="home" href="https://discord.gg/H5MNcFW63r" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">最强视频下载命令行工具，支持上千个站点</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 20.4万</span><span class="pushed">2026-10-29</span></div>
+</a><a class="card" href="https://github.com/ohmyzsh/ohmyzsh" target="_blank" rel="noopener" data-search="ohmyzsh/ohmyzsh zsh 配置框架，300+ 插件让终端好用起来 shell">
+  <div class="card-top"><span class="name">ohmyzsh</span><a class="home" href="https://ohmyz.sh" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Zsh 配置框架，300+ 插件让终端好用起来</p>
+  <div class="meta"><span class="lang"><i style="background:#89e051"></i>Shell</span><span class="stars">★ 19.0万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/neovim/neovim" target="_blank" rel="noopener" data-search="neovim/neovim 现代化 vim，lsp 原生支持，配插件后不输 ide vim script">
+  <div class="card-top"><span class="name">neovim</span><a class="home" href="https://neovim.io" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">现代化 Vim，LSP 原生支持，配插件后不输 IDE</p>
+  <div class="meta"><span class="lang"><i style="background:#8b949e"></i>Vim Script</span><span class="stars">★ 10.3万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/junegunn/fzf" target="_blank" rel="noopener" data-search="junegunn/fzf 通用模糊搜索器，命令历史/文件/分支一搜即达 go">
+  <div class="card-top"><span class="name">fzf</span><a class="home" href="https://junegunn.github.io/fzf/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">通用模糊搜索器，命令历史/文件/分支一搜即达</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 8.4万</span><span class="pushed">2026-10-29</span></div>
+</a><a class="card" href="https://github.com/BurntSushi/ripgrep" target="_blank" rel="noopener" data-search="burntsushi/ripgrep 最快的代码搜索工具，grep 的现代替代品，vs code 内置同款 rust">
+  <div class="card-top"><span class="name">ripgrep</span></div>
+  <p class="desc">最快的代码搜索工具，grep 的现代替代品，VS Code 内置同款</p>
+  <div class="meta"><span class="lang"><i style="background:#dea584"></i>Rust</span><span class="stars">★ 7.0万</span><span class="pushed">2026-10-27</span></div>
+</a><a class="card" href="https://github.com/sharkdp/bat" target="_blank" rel="noopener" data-search="sharkdp/bat cat 的升级版：语法高亮+行号+git 集成 rust">
+  <div class="card-top"><span class="name">bat</span></div>
+  <p class="desc">cat 的升级版：语法高亮+行号+Git 集成</p>
+  <div class="meta"><span class="lang"><i style="background:#dea584"></i>Rust</span><span class="stars">★ 6.1万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/tmux/tmux" target="_blank" rel="noopener" data-search="tmux/tmux 终端复用器：一个窗口分多屏，ssh 断线任务不死 c">
+  <div class="card-top"><span class="name">tmux</span></div>
+  <p class="desc">终端复用器：一个窗口分多屏，SSH 断线任务不死</p>
+  <div class="meta"><span class="lang"><i style="background:#555555"></i>C</span><span class="stars">★ 5.0万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/sharkdp/fd" target="_blank" rel="noopener" data-search="sharkdp/fd find 的现代化替代，语法好记速度快 rust">
+  <div class="card-top"><span class="name">fd</span></div>
+  <p class="desc">find 的现代化替代，语法好记速度快</p>
+  <div class="meta"><span class="lang"><i style="background:#dea584"></i>Rust</span><span class="stars">★ 4.5万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/ajeetdsouza/zoxide" target="_blank" rel="noopener" data-search="ajeetdsouza/zoxide 智能 cd：记住你去过的目录，敲两三个字母直达 rust">
+  <div class="card-top"><span class="name">zoxide</span><a class="home" href="https://crates.io/crates/zoxide" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">智能 cd：记住你去过的目录，敲两三个字母直达</p>
+  <div class="meta"><span class="lang"><i style="background:#dea584"></i>Rust</span><span class="stars">★ 4.0万</span><span class="pushed">2026-10-24</span></div>
+</a><a class="card" href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener" data-search="zsh-users/zsh-autosuggestions zsh 自动补全建议插件，灰色提示按右箭头采纳 shell">
+  <div class="card-top"><span class="name">zsh-autosuggestions</span></div>
+  <p class="desc">Zsh 自动补全建议插件，灰色提示按右箭头采纳</p>
+  <div class="meta"><span class="lang"><i style="background:#89e051"></i>Shell</span><span class="stars">★ 3.6万</span><span class="pushed">2025-06-24</span><span class="badge cold">停更</span></div>
+</a><a class="card" href="https://github.com/jqlang/jq" target="_blank" rel="noopener" data-search="jqlang/jq 命令行 json 处理器，管道里加工 json 的瑞士军刀 c">
+  <div class="card-top"><span class="name">jq</span><a class="home" href="https://jqlang.org" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">命令行 JSON 处理器，管道里加工 JSON 的瑞士军刀</p>
+  <div class="meta"><span class="lang"><i style="background:#555555"></i>C</span><span class="stars">★ 3.6万</span><span class="pushed">2026-11-01</span></div>
+</a></div>
+</section>
+<section id="cn">
+  <h2><a href="#cn">#</a> 中文原创精品<span class="count">8</span></h2>
+  <div class="grid"><a class="card" href="https://github.com/521xueweihan/HelloGitHub" target="_blank" rel="noopener" data-search="521xueweihan/hellogithub 每月精选有趣开源项目的中文月刊，找项目灵感就看它 python">
+  <div class="card-top"><span class="name">HelloGitHub</span><a class="home" href="https://hellogithub.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">每月精选有趣开源项目的中文月刊，找项目灵感就看它</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 18.6万</span><span class="pushed">2026-10-31</span></div>
+</a><a class="card" href="https://github.com/fatedier/frp" target="_blank" rel="noopener" data-search="fatedier/frp 内网穿透第一神器：把家里的机器暴露给公网访问 go">
+  <div class="card-top"><span class="name">frp</span></div>
+  <p class="desc">内网穿透第一神器：把家里的机器暴露给公网访问</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 11.0万</span><span class="pushed">2026-10-23</span></div>
+</a><a class="card" href="https://github.com/jeecgboot/JeecgBoot" target="_blank" rel="noopener" data-search="jeecgboot/jeecgboot 国产低代码平台，代码生成器+报表+工作流，企业开发提效 java">
+  <div class="card-top"><span class="name">JeecgBoot</span><a class="home" href="https://jeecg.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">国产低代码平台，代码生成器+报表+工作流，企业开发提效</p>
+  <div class="meta"><span class="lang"><i style="background:#b07219"></i>Java</span><span class="stars">★ 4.8万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/go-gorm/gorm" target="_blank" rel="noopener" data-search="go-gorm/gorm go 最流行的 orm 库，中文文档齐全 go">
+  <div class="card-top"><span class="name">gorm</span><a class="home" href="https://gorm.io" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Go 最流行的 ORM 库，中文文档齐全</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 4.0万</span><span class="pushed">2026-10-24</span></div>
+</a><a class="card" href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener" data-search="jumpserver/jumpserver 开源堡垒机，管公司所有服务器的登录审计 python">
+  <div class="card-top"><span class="name">jumpserver</span><a class="home" href="https://jumpserver.com" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">开源堡垒机，管公司所有服务器的登录审计</p>
+  <div class="meta"><span class="lang"><i style="background:#3572A5"></i>Python</span><span class="stars">★ 3.2万</span><span class="pushed">2026-11-01</span></div>
+</a><a class="card" href="https://github.com/dromara/hutool" target="_blank" rel="noopener" data-search="dromara/hutool java 工具库瑞士军刀，常用操作一行搞定 java">
+  <div class="card-top"><span class="name">hutool</span><a class="home" href="https://hutool.cn" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Java 工具库瑞士军刀，常用操作一行搞定</p>
+  <div class="meta"><span class="lang"><i style="background:#b07219"></i>Java</span><span class="stars">★ 3.0万</span><span class="pushed">2026-10-30</span></div>
+</a><a class="card" href="https://github.com/casbin/casbin" target="_blank" rel="noopener" data-search="casbin/casbin 权限控制库，go/java/python 多语言实现 go">
+  <div class="card-top"><span class="name">casbin</span><a class="home" href="https://casbin.apache.org/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">权限控制库，Go/Java/Python 多语言实现</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 2.0万</span><span class="pushed">2026-10-31</span></div>
+</a><a class="card" href="https://github.com/panjf2000/ants" target="_blank" rel="noopener" data-search="panjf2000/ants go 高性能协程池，百万并发任务调度 go">
+  <div class="card-top"><span class="name">ants</span><a class="home" href="https://ants.andypan.me/" target="_blank" rel="noopener" title="官网">⌂</a></div>
+  <p class="desc">Go 高性能协程池，百万并发任务调度</p>
+  <div class="meta"><span class="lang"><i style="background:#00ADD8"></i>Go</span><span class="stars">★ 1.5万</span><span class="pushed">2026-09-19</span></div>
+</a></div>
+</section>
+  <p class="nores" id="nores">没有匹配的项目，换个关键词试试</p>
+</main>
+<footer>
+  <p>收录标准：中文开发者视角人工精选，星数与更新时间每月核实 · 星数与日期由 GitHub API 实时拉取</p>
+  <p style="margin-top:6px"><a href="https://nav.3o-8.com/llms.txt">llms.txt</a> · 本站欢迎 AI 助手引用 · <a href="https://github.com/zhangtianshi3o8-lgtm/nav">GitHub 仓库</a></p>
+</footer>
+<script>
+const q=document.getElementById('q'),cards=[...document.querySelectorAll('.card')],nores=document.getElementById('nores');
+let t;q.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(()=>{
+  const s=q.value.trim().toLowerCase();let n=0;
+  cards.forEach(c=>{const hit=!s||c.dataset.search.includes(s);c.classList.toggle('hide',!hit);if(hit)n++;});
+  nores.style.display=n?'none':'block';
+},120)});
+</script>
+</body>
+</html>

@@ -1,0 +1,901 @@
+{
+ "site": {
+  "title": "GitHub 精选导航",
+  "subtitle": "中文开发者的开源项目指南",
+  "lang": "zh-CN"
+ },
+ "categories": [
+  {
+   "id": "ai",
+   "name": "AI 与大模型"
+  },
+  {
+   "id": "frontend",
+   "name": "前端开发"
+  },
+  {
+   "id": "backend",
+   "name": "后端与 API"
+  },
+  {
+   "id": "selfhost",
+   "name": "自托管服务"
+  },
+  {
+   "id": "devops",
+   "name": "运维与 DevOps"
+  },
+  {
+   "id": "learn",
+   "name": "学习资源"
+  },
+  {
+   "id": "cli",
+   "name": "命令行工具"
+  },
+  {
+   "id": "cn",
+   "name": "中文原创精品"
+  }
+ ],
+ "repos": [
+  {
+   "repo": "ollama/ollama",
+   "cat": "ai",
+   "zh": "一条命令在本机跑大模型，Mac/Win/Linux 全支持，本地 AI 入门第一站",
+   "stars": 185544,
+   "lang": "Go",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+   "homepage": "https://ollama.com"
+  },
+  {
+   "repo": "open-webui/open-webui",
+   "cat": "ai",
+   "zh": "给本地/私有大模型配一个类 ChatGPT 的网页界面，支持多用户",
+   "stars": 157454,
+   "lang": "Python",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+   "homepage": "https://openwebui.com"
+  },
+  {
+   "repo": "lobehub/lobe-chat",
+   "cat": "ai",
+   "zh": "开源 LLM 聊天应用，插件生态和知识库齐全，界面精致",
+   "stars": 83660,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI t",
+   "homepage": "https://lobehub.com"
+  },
+  {
+   "repo": "ChatGPTNextWeb/NextChat",
+   "cat": "ai",
+   "zh": "轻量一键部署的 ChatGPT 网页端，跨平台",
+   "stars": 88933,
+   "lang": "TypeScript",
+   "pushed": "2026-10-20",
+   "archived": false,
+   "desc": "✨ Zero-config AI chat assistant. No API key needed — sign up and instantly chat with GPT-5, Claude 4, Gemini 2.5, DeepSeek & 100+ top models",
+   "homepage": "https://nextchat.club"
+  },
+  {
+   "repo": "langgenius/dify",
+   "cat": "ai",
+   "zh": "可视化编排 LLM 应用：工作流、知识库、Agent 一站搞定，中文友好",
+   "stars": 160154,
+   "lang": "Python",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-ho",
+   "homepage": "https://dify.ai"
+  },
+  {
+   "repo": "labring/FastGPT",
+   "cat": "ai",
+   "zh": "国产知识库问答平台，Flow 可视化编排，中文文档完善",
+   "stars": 29967,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing",
+   "homepage": "https://fastgpt.io"
+  },
+  {
+   "repo": "comfyanonymous/ComfyUI",
+   "cat": "ai",
+   "zh": "节点式 AI 绘图工作流引擎，Stable Diffusion 进阶玩家标配",
+   "stars": 144440,
+   "lang": "Python",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the w",
+   "homepage": "https://www.comfy.org/"
+  },
+  {
+   "repo": "AUTOMATIC1111/stable-diffusion-webui",
+   "cat": "ai",
+   "zh": "Stable Diffusion 最经典的网页前端，教程生态最丰富",
+   "stars": 165211,
+   "lang": "Python",
+   "pushed": "2026-03-02",
+   "archived": false,
+   "desc": "Stable Diffusion web UI",
+   "homepage": ""
+  },
+  {
+   "repo": "huggingface/transformers",
+   "cat": "ai",
+   "zh": "HuggingFace 的 transformers 库，微调、部署大模型的事实标准",
+   "stars": 168413,
+   "lang": "Python",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, f",
+   "homepage": "https://huggingface.co/transformers"
+  },
+  {
+   "repo": "openai/whisper",
+   "cat": "ai",
+   "zh": "OpenAI 开源的语音识别模型，多语言转文字精度高，可本地跑",
+   "stars": 111703,
+   "lang": "Python",
+   "pushed": "2026-08-31",
+   "archived": false,
+   "desc": "Robust Speech Recognition via Large-Scale Weak Supervision",
+   "homepage": ""
+  },
+  {
+   "repo": "facebook/react",
+   "cat": "frontend",
+   "zh": "最流行的前端 UI 库，生态最大",
+   "stars": 252070,
+   "lang": "JavaScript",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "The library for web and native user interfaces.",
+   "homepage": "https://react.dev"
+  },
+  {
+   "repo": "vuejs/core",
+   "cat": "frontend",
+   "zh": "渐进式前端框架，中文文档一流，国内使用率极高",
+   "stars": 55020,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+   "homepage": "https://vuejs.org/"
+  },
+  {
+   "repo": "vitejs/vite",
+   "cat": "frontend",
+   "zh": "下一代前端构建工具，冷启动快到飞起，Vue/React 通吃",
+   "stars": 83653,
+   "lang": "TypeScript",
+   "pushed": "2026-10-30",
+   "archived": false,
+   "desc": "Next generation frontend tooling. It's fast!",
+   "homepage": "http://vite.dev"
+  },
+  {
+   "repo": "tailwindlabs/tailwindcss",
+   "cat": "frontend",
+   "zh": "原子化 CSS 框架，不写样式文件也能排出好看的界面",
+   "stars": 98274,
+   "lang": "TypeScript",
+   "pushed": "2026-10-19",
+   "archived": false,
+   "desc": "A utility-first CSS framework for rapid UI development.",
+   "homepage": "https://tailwindcss.com/"
+  },
+  {
+   "repo": "ant-design/ant-design",
+   "cat": "frontend",
+   "zh": "蚂蚁出品的企业级 React 组件库，中后台标配",
+   "stars": 100032,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "An enterprise-class UI design language and React UI library",
+   "homepage": "https://ant.design"
+  },
+  {
+   "repo": "element-plus/element-plus",
+   "cat": "frontend",
+   "zh": "Vue 3 生态最常用的组件库，中文文档齐全",
+   "stars": 27834,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "🎉 A Vue.js 3 UI Library made by Element team",
+   "homepage": "https://element-plus.org"
+  },
+  {
+   "repo": "shadcn-ui/ui",
+   "cat": "frontend",
+   "zh": "组件源码直接拷进项目的 React UI 方案，近两年最火",
+   "stars": 127115,
+   "lang": "TypeScript",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make y",
+   "homepage": "https://ui.shadcn.com"
+  },
+  {
+   "repo": "withastro/astro",
+   "cat": "frontend",
+   "zh": "内容型网站框架，默认零 JS 输出，做博客/文档站又快又轻",
+   "stars": 63642,
+   "lang": "TypeScript",
+   "pushed": "2026-10-30",
+   "archived": false,
+   "desc": "The web framework for content-driven websites.",
+   "homepage": "https://astro.build"
+  },
+  {
+   "repo": "dcloudio/uni-app",
+   "cat": "frontend",
+   "zh": "一套代码编译到小程序/App/H5，国内小程序开发主力框架",
+   "stars": 41631,
+   "lang": "JavaScript",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "A cross-platform framework using Vue.js",
+   "homepage": "https://uniapp.dcloud.io"
+  },
+  {
+   "repo": "mui/material-ui",
+   "cat": "frontend",
+   "zh": "Material Design 风格的 React 组件库，老牌稳定",
+   "stars": 99292,
+   "lang": "JavaScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "Material UI: Comprehensive React component library that implements Google's Material Design. Free forever.",
+   "homepage": "https://mui.com/material-ui/"
+  },
+  {
+   "repo": "gin-gonic/gin",
+   "cat": "backend",
+   "zh": "Go 最流行的 Web 框架，快、轻、路由优雅",
+   "stars": 89467,
+   "lang": "Go",
+   "pushed": "2026-10-10",
+   "archived": false,
+   "desc": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 4",
+   "homepage": "https://gin-gonic.com/"
+  },
+  {
+   "repo": "expressjs/express",
+   "cat": "backend",
+   "zh": "Node.js 老牌 Web 框架，教程最多",
+   "stars": 69584,
+   "lang": "JavaScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "Fast, unopinionated, minimalist web framework for node.",
+   "homepage": "https://expressjs.com"
+  },
+  {
+   "repo": "fastapi/fastapi",
+   "cat": "backend",
+   "zh": "Python 现代 API 框架，自动生成文档，类型提示直接校验参数",
+   "stars": 104529,
+   "lang": "Python",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+   "homepage": "https://fastapi.tiangolo.com/"
+  },
+  {
+   "repo": "django/django",
+   "cat": "backend",
+   "zh": "Python 全家桶 Web 框架，admin 后台开箱即用",
+   "stars": 91701,
+   "lang": "Python",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "The Web framework for perfectionists with deadlines.",
+   "homepage": "https://www.djangoproject.com/"
+  },
+  {
+   "repo": "spring-projects/spring-boot",
+   "cat": "backend",
+   "zh": "Java 企业级开发事实标准，微服务基石",
+   "stars": 81726,
+   "lang": "Java",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
+   "homepage": "https://spring.io/projects/spring-boot"
+  },
+  {
+   "repo": "nestjs/nest",
+   "cat": "backend",
+   "zh": "TypeScript 后端框架，结构化程度对标 Spring，适合中大型项目",
+   "stars": 76960,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications with TypeScript/JavaScript 🚀",
+   "homepage": "https://nestjs.com"
+  },
+  {
+   "repo": "hoppscotch/hoppscotch",
+   "cat": "backend",
+   "zh": "开源 Postman 替代品，网页里直接调 API，轻快",
+   "stars": 80717,
+   "lang": "TypeScript",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "Open-Source API Development Ecosystem • https://hoppscotch.io • Offline, On-Prem & Cloud • Web, Desktop & CLI • Open-Source Alternative to P",
+   "homepage": "https://hoppscotch.io"
+  },
+  {
+   "repo": "zeromicro/go-zero",
+   "cat": "backend",
+   "zh": "国产 Go 微服务框架，一条命令生成服务骨架，中文文档齐全",
+   "stars": 33419,
+   "lang": "Go",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "A cloud-native Go microservices framework with cli tool for productivity.",
+   "homepage": "https://go-zero.dev"
+  },
+  {
+   "repo": "apache/dubbo",
+   "cat": "backend",
+   "zh": "阿里开源的 Java RPC 框架，国内微服务老牌基础设施",
+   "stars": 41581,
+   "lang": "Java",
+   "pushed": "2026-10-30",
+   "archived": false,
+   "desc": "The java implementation of Apache Dubbo. An RPC and microservice framework.",
+   "homepage": "https://dubbo.apache.org/"
+  },
+  {
+   "repo": "fastify/fastify",
+   "cat": "backend",
+   "zh": "高性能 Node.js 框架，基准测试常年前列",
+   "stars": 37338,
+   "lang": "JavaScript",
+   "pushed": "2026-10-29",
+   "archived": false,
+   "desc": "Fast and low overhead web framework, for Node.js",
+   "homepage": "https://www.fastify.dev"
+  },
+  {
+   "repo": "immich-app/immich",
+   "cat": "selfhost",
+   "zh": "自建 Google Photos：手机照片自动备份、AI 人脸/场景搜索",
+   "stars": 117868,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "High performance self-hosted photo and video management solution.",
+   "homepage": "https://immich.app"
+  },
+  {
+   "repo": "nextcloud/server",
+   "cat": "selfhost",
+   "zh": "自建私有云盘全家桶，文件同步/日历/办公协作都有",
+   "stars": 37383,
+   "lang": "PHP",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "☁️ Nextcloud server, a safe home for all your data",
+   "homepage": "https://nextcloud.com"
+  },
+  {
+   "repo": "dani-garcia/vaultwarden",
+   "cat": "selfhost",
+   "zh": "轻量 Bitwarden 密码管理服务器，家用 NAS 完美搭配",
+   "stars": 70036,
+   "lang": "Rust",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+   "homepage": ""
+  },
+  {
+   "repo": "jellyfin/jellyfin",
+   "cat": "selfhost",
+   "zh": "自建影视库，刮削海报、多端观看，完全免费无广告",
+   "stars": 58894,
+   "lang": "C#",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "The Free Software Media System - Server Backend & API",
+   "homepage": "https://jellyfin.org"
+  },
+  {
+   "repo": "syncthing/syncthing",
+   "cat": "selfhost",
+   "zh": "多设备文件同步，不经过任何云端，P2P 直连",
+   "stars": 89978,
+   "lang": "Go",
+   "pushed": "2026-10-29",
+   "archived": false,
+   "desc": "Open Source Continuous File Synchronization",
+   "homepage": "https://syncthing.net/"
+  },
+  {
+   "repo": "louislam/uptime-kuma",
+   "cat": "selfhost",
+   "zh": "自建网站监控面板，界面漂亮，掉线报警一条龙，中文作者",
+   "stars": 93139,
+   "lang": "JavaScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "A fancy self-hosted monitoring tool",
+   "homepage": "https://uptime.kuma.pet"
+  },
+  {
+   "repo": "photoprism/photoprism",
+   "cat": "selfhost",
+   "zh": "老牌自建相册，AI 自动分类打标签",
+   "stars": 40381,
+   "lang": "Go",
+   "pushed": "2026-10-29",
+   "archived": false,
+   "desc": "AI-Powered Photos App 🌈💎✨",
+   "homepage": "https://www.photoprism.app"
+  },
+  {
+   "repo": "navidrome/navidrome",
+   "cat": "selfhost",
+   "zh": "自建音乐流媒体服务器，兼容 Subsonic 客户端",
+   "stars": 24473,
+   "lang": "Go",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "🎧 Your Personal Streaming Service ",
+   "homepage": "https://www.navidrome.org"
+  },
+  {
+   "repo": "TriliumNext/Trilium",
+   "cat": "selfhost",
+   "zh": "层级式个人知识库笔记，社区续作的活跃版本",
+   "stars": 38644,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "Build your personal knowledge base with Trilium Notes",
+   "homepage": "https://triliumnotes.org"
+  },
+  {
+   "repo": "portainer/portainer",
+   "cat": "devops",
+   "zh": "Docker/K8s 可视化管理面板，告别纯命令行管容器",
+   "stars": 38757,
+   "lang": "TypeScript",
+   "pushed": "2026-10-27",
+   "archived": false,
+   "desc": "Making Docker and Kubernetes management easy.",
+   "homepage": "https://www.portainer.io"
+  },
+  {
+   "repo": "traefik/traefik",
+   "cat": "devops",
+   "zh": "现代反向代理/网关，自动发现容器并配 HTTPS",
+   "stars": 65430,
+   "lang": "Go",
+   "pushed": "2026-10-30",
+   "archived": false,
+   "desc": "The Cloud Native Application Proxy",
+   "homepage": "https://traefik.io"
+  },
+  {
+   "repo": "jc21/nginx-proxy-manager",
+   "cat": "devops",
+   "zh": "点鼠标配 Nginx 反代和 SSL 证书，小白友好",
+   "stars": 34600,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+   "homepage": "https://nginxproxymanager.com"
+  },
+  {
+   "repo": "nicholas-fedor/watchtower",
+   "cat": "devops",
+   "zh": "自动更新 Docker 容器到最新镜像，原版归档后的社区接力版",
+   "stars": 4763,
+   "lang": "Go",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "Automate Docker container image updates",
+   "homepage": "http://watchtower.nickfedor.com/"
+  },
+  {
+   "repo": "prometheus/prometheus",
+   "cat": "devops",
+   "zh": "监控系统事实标准，指标采集+告警",
+   "stars": 66890,
+   "lang": "Go",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "The Prometheus monitoring system and time series database.",
+   "homepage": "https://prometheus.io/"
+  },
+  {
+   "repo": "grafana/grafana",
+   "cat": "devops",
+   "zh": "最流行的可视化仪表盘，接各种数据源画监控大屏",
+   "stars": 77611,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Promet",
+   "homepage": "https://grafana.com"
+  },
+  {
+   "repo": "ansible/ansible",
+   "cat": "devops",
+   "zh": "批量管服务器的自动化工具，写 YAML 就能部署一百台机器",
+   "stars": 71184,
+   "lang": "Python",
+   "pushed": "2026-10-30",
+   "archived": false,
+   "desc": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everyt",
+   "homepage": "https://www.ansible.com/"
+  },
+  {
+   "repo": "kubernetes/kubernetes",
+   "cat": "devops",
+   "zh": "容器编排之王，云原生时代的操作系统",
+   "stars": 128814,
+   "lang": "Go",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "Production-Grade Container Scheduling and Management",
+   "homepage": "https://kubernetes.io"
+  },
+  {
+   "repo": "seaweedfs/seaweedfs",
+   "cat": "devops",
+   "zh": "国产分布式对象存储，轻量快速，S3 兼容",
+   "stars": 35852,
+   "lang": "Go",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables, designed to handle billions of files wi",
+   "homepage": "https://seaweedfs.com"
+  },
+  {
+   "repo": "1Panel-dev/1Panel",
+   "cat": "devops",
+   "zh": "国产现代化 Linux 服务器管理面板，建站管容器点鼠标",
+   "stars": 37332,
+   "lang": "Go",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "🔥 1Panel is a modern, open-source Linux server management panel and a lightweight AI management platform.",
+   "homepage": "https://1panel.pro"
+  },
+  {
+   "repo": "krahets/hello-algo",
+   "cat": "learn",
+   "zh": "动画图解、一键运行的数据结构与算法教程，中文最好的算法入门书",
+   "stars": 131847,
+   "lang": "Swift",
+   "pushed": "2026-10-30",
+   "archived": false,
+   "desc": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
+   "homepage": "https://www.hello-algo.com"
+  },
+  {
+   "repo": "labuladong/fucking-algorithm",
+   "cat": "learn",
+   "zh": "labuladong 的算法小抄，刷题套路框架化",
+   "stars": 136005,
+   "lang": "Markdown",
+   "pushed": "2026-10-18",
+   "archived": false,
+   "desc": "Crack LeetCode, not only how, but also why. ",
+   "homepage": "https://labuladong.online/"
+  },
+  {
+   "repo": "doocs/leetcode",
+   "cat": "learn",
+   "zh": "LeetCode 题解合集，多种语言实现，持续更新",
+   "stars": 36744,
+   "lang": "Java",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "🔥LeetCode solutions in any programming language | 多种编程语言实现 LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解",
+   "homepage": "https://leetcode.doocs.org"
+  },
+  {
+   "repo": "CyC2018/CS-Notes",
+   "cat": "learn",
+   "zh": "技术面试必备基础知识合集，中文圈传阅最广",
+   "stars": 186410,
+   "lang": "JavaScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": ":books: 技术面试必备基础知识、Leetcode、计算机操作系统、计算机网络、系统设计",
+   "homepage": "http://cyc2018.xyz"
+  },
+  {
+   "repo": "jwasham/coding-interview-university",
+   "cat": "learn",
+   "zh": "谷歌工程师的自学清单，从零到通过大厂面试的完整路线",
+   "stars": 363645,
+   "lang": "",
+   "pushed": "2025-08-28",
+   "archived": false,
+   "desc": "A complete computer science study plan to become a software engineer.",
+   "homepage": ""
+  },
+  {
+   "repo": "kamranahmedse/developer-roadmap",
+   "cat": "learn",
+   "zh": "开发者成长路线图：前端/后端/DevOps 该学什么一张图看懂",
+   "stars": 370938,
+   "lang": "TypeScript",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+   "homepage": "https://roadmap.sh"
+  },
+  {
+   "repo": "donnemartin/system-design-primer",
+   "cat": "learn",
+   "zh": "系统设计入门：如何设计一个能扛百万用户的系统",
+   "stars": 376404,
+   "lang": "Python",
+   "pushed": "2026-09-15",
+   "archived": false,
+   "desc": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+   "homepage": ""
+  },
+  {
+   "repo": "TheAlgorithms/Python",
+   "cat": "learn",
+   "zh": "用 Python 实现的所有经典算法，带讲解",
+   "stars": 225756,
+   "lang": "Python",
+   "pushed": "2026-10-20",
+   "archived": false,
+   "desc": "All Algorithms implemented in Python",
+   "homepage": "https://thealgorithms.github.io/Python/"
+  },
+  {
+   "repo": "freeCodeCamp/freeCodeCamp",
+   "cat": "learn",
+   "zh": "免费学编程的完整课程+认证体系，边做项目边学",
+   "stars": 458356,
+   "lang": "TypeScript",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+   "homepage": "https://contribute.freecodecamp.org"
+  },
+  {
+   "repo": "mdn/content",
+   "cat": "learn",
+   "zh": "MDN Web 文档开源仓库，Web 标准最权威的资料",
+   "stars": 11115,
+   "lang": "Markdown",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "The official source for MDN Web Docs content. Home to over 14,000 pages of documentation about HTML, CSS, JS, HTTP, Web APIs, and more.",
+   "homepage": "https://developer.mozilla.org"
+  },
+  {
+   "repo": "BurntSushi/ripgrep",
+   "cat": "cli",
+   "zh": "最快的代码搜索工具，grep 的现代替代品，VS Code 内置同款",
+   "stars": 69610,
+   "lang": "Rust",
+   "pushed": "2026-10-27",
+   "archived": false,
+   "desc": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
+   "homepage": ""
+  },
+  {
+   "repo": "sharkdp/bat",
+   "cat": "cli",
+   "zh": "cat 的升级版：语法高亮+行号+Git 集成",
+   "stars": 61002,
+   "lang": "Rust",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "A cat(1) clone with wings.",
+   "homepage": ""
+  },
+  {
+   "repo": "sharkdp/fd",
+   "cat": "cli",
+   "zh": "find 的现代化替代，语法好记速度快",
+   "stars": 44918,
+   "lang": "Rust",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "A simple, fast and user-friendly alternative to 'find'",
+   "homepage": ""
+  },
+  {
+   "repo": "junegunn/fzf",
+   "cat": "cli",
+   "zh": "通用模糊搜索器，命令历史/文件/分支一搜即达",
+   "stars": 83898,
+   "lang": "Go",
+   "pushed": "2026-10-29",
+   "archived": false,
+   "desc": ":cherry_blossom: A command-line fuzzy finder",
+   "homepage": "https://junegunn.github.io/fzf/"
+  },
+  {
+   "repo": "ajeetdsouza/zoxide",
+   "cat": "cli",
+   "zh": "智能 cd：记住你去过的目录，敲两三个字母直达",
+   "stars": 40398,
+   "lang": "Rust",
+   "pushed": "2026-10-24",
+   "archived": false,
+   "desc": "A smarter cd command. Supports all major shells.",
+   "homepage": "https://crates.io/crates/zoxide"
+  },
+  {
+   "repo": "neovim/neovim",
+   "cat": "cli",
+   "zh": "现代化 Vim，LSP 原生支持，配插件后不输 IDE",
+   "stars": 103283,
+   "lang": "Vim Script",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "Vim-fork focused on extensibility and usability",
+   "homepage": "https://neovim.io"
+  },
+  {
+   "repo": "tmux/tmux",
+   "cat": "cli",
+   "zh": "终端复用器：一个窗口分多屏，SSH 断线任务不死",
+   "stars": 50101,
+   "lang": "C",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "tmux source code",
+   "homepage": ""
+  },
+  {
+   "repo": "ohmyzsh/ohmyzsh",
+   "cat": "cli",
+   "zh": "Zsh 配置框架，300+ 插件让终端好用起来",
+   "stars": 190282,
+   "lang": "Shell",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "🙃   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (",
+   "homepage": "https://ohmyz.sh"
+  },
+  {
+   "repo": "zsh-users/zsh-autosuggestions",
+   "cat": "cli",
+   "zh": "Zsh 自动补全建议插件，灰色提示按右箭头采纳",
+   "stars": 36180,
+   "lang": "Shell",
+   "pushed": "2025-06-24",
+   "archived": false,
+   "desc": "Fish-like autosuggestions for zsh",
+   "homepage": ""
+  },
+  {
+   "repo": "yt-dlp/yt-dlp",
+   "cat": "cli",
+   "zh": "最强视频下载命令行工具，支持上千个站点",
+   "stars": 204404,
+   "lang": "Python",
+   "pushed": "2026-10-29",
+   "archived": false,
+   "desc": "A feature-rich command-line audio/video downloader",
+   "homepage": "https://discord.gg/H5MNcFW63r"
+  },
+  {
+   "repo": "jqlang/jq",
+   "cat": "cli",
+   "zh": "命令行 JSON 处理器，管道里加工 JSON 的瑞士军刀",
+   "stars": 36005,
+   "lang": "C",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "Command-line JSON processor",
+   "homepage": "https://jqlang.org"
+  },
+  {
+   "repo": "fatedier/frp",
+   "cat": "cn",
+   "zh": "内网穿透第一神器：把家里的机器暴露给公网访问",
+   "stars": 110370,
+   "lang": "Go",
+   "pushed": "2026-10-23",
+   "archived": false,
+   "desc": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.",
+   "homepage": ""
+  },
+  {
+   "repo": "jumpserver/jumpserver",
+   "cat": "cn",
+   "zh": "开源堡垒机，管公司所有服务器的登录审计",
+   "stars": 31873,
+   "lang": "Python",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "JumpServer is an Open-source Privileged Access Management (PAM) platform with AI-powered capabilities, providing DevOps and IT teams a unifi",
+   "homepage": "https://jumpserver.com"
+  },
+  {
+   "repo": "casbin/casbin",
+   "cat": "cn",
+   "zh": "权限控制库，Go/Java/Python 多语言实现",
+   "stars": 20477,
+   "lang": "Go",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": "Apache Casbin: an authorization library that supports access control models like ACL, RBAC, ABAC.",
+   "homepage": "https://casbin.apache.org/"
+  },
+  {
+   "repo": "go-gorm/gorm",
+   "cat": "cn",
+   "zh": "Go 最流行的 ORM 库，中文文档齐全",
+   "stars": 39987,
+   "lang": "Go",
+   "pushed": "2026-10-24",
+   "archived": false,
+   "desc": "The fantastic ORM library for Golang, aims to be developer friendly",
+   "homepage": "https://gorm.io"
+  },
+  {
+   "repo": "dromara/hutool",
+   "cat": "cn",
+   "zh": "Java 工具库瑞士军刀，常用操作一行搞定",
+   "stars": 30236,
+   "lang": "Java",
+   "pushed": "2026-10-30",
+   "archived": false,
+   "desc": "🍬A set of tools that keep Java sweet.",
+   "homepage": "https://hutool.cn"
+  },
+  {
+   "repo": "521xueweihan/HelloGitHub",
+   "cat": "cn",
+   "zh": "每月精选有趣开源项目的中文月刊，找项目灵感就看它",
+   "stars": 186140,
+   "lang": "Python",
+   "pushed": "2026-10-31",
+   "archived": false,
+   "desc": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+   "homepage": "https://hellogithub.com"
+  },
+  {
+   "repo": "panjf2000/ants",
+   "cat": "cn",
+   "zh": "Go 高性能协程池，百万并发任务调度",
+   "stars": 14522,
+   "lang": "Go",
+   "pushed": "2026-09-19",
+   "archived": false,
+   "desc": "🐜🐜🐜 ants is the most powerful and reliable pooling solution for Go.",
+   "homepage": "https://ants.andypan.me/"
+  },
+  {
+   "repo": "jeecgboot/JeecgBoot",
+   "cat": "cn",
+   "zh": "国产低代码平台，代码生成器+报表+工作流，企业开发提效",
+   "stars": 48362,
+   "lang": "Java",
+   "pushed": "2026-11-01",
+   "archived": false,
+   "desc": "【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → ",
+   "homepage": "https://jeecg.com"
+  }
+ ]
+}
